@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(./pexels-pixabay-258112.jpg);
+            background-position: center;
+            min-height: 80vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font: bolder;
+            color: rgb(255, 230, 230);
+        }
+        header{
+            text-align: center;
+            font-size: 27px;
+            margin-top: 85px;
+            color: white;
+            font-weight:900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .countdown{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -60px;
+        }
+        .days,.hours,.minutes,.seconds{
+            text-align: center;
+            padding: 10px 10px;
+            margin: 10px 10px;
+        }
+
+        .hours , .minutes{
+            margin-right: -5px;
+        }
+
+        .description{
+            padding-right: 10px;
+            margin-left: 8px;
+        } 
+        .days-timer, .hrs-timer, .min-timer, .sec-timer{
+            font-size: 65px;
+            margin-bottom: -8px;
+        }
+    </style>
+    <header>
+        <h1>New Year Eve <span class="year"></span></h1>
+    </header>
+
+    <div class="countdown">
+        <div class="days" id="days">
+            <h2 class="days-timer"></h2>
+            <h3 class="day description">Days</h3>
+        </div>
+        <div class="hours" id="hours">
+            <h2 class="hrs-timer"></h2>
+            <h3 class="hr description">Hours</h3>
+        </div>
+        <div class="minutes" id="minutes">
+            <h2 class="min-timer"></h2>
+            <h3 class="min description">Minutes</h3>
+
+        </div>
+        <div class="seconds" id="seconds">
+            <h2 class="sec-timer"></h2>
+            <h3 class="sec description">Seconds</h3>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
